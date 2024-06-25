@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* base rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Jost", sans-serif;
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  /* color:#feebee; new color*/
+}
+a,
+li,
+p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Urbanist", sans-serif !important;
+  font-weight: 400;
+}
+/* themes*/
+:root {
+  --blue: #1e549f;
+  --indigo: #695aa6;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #ec185d;
+  --orange: #ff6d02;
+  --yellow: #ffc107;
+  --green: #1bb74f;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #393e46;
+  --primary: #695aa6;
+  --secondary: #393e46;
+  --success: #1bb74f;
+  --info: #17a2b8;
+  --warning: #ff6d02;
+  --danger: #ec185d;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --slate: #2f4f4f;
+  --slatethin: #429191;
+  --aqua: #00ffff;
+  --wheat: #fefaf6;
+}
+
+/* layout*/
+
+/*modules reusable*/
+& .main-card {
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+  &:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  & img {
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+  }
+  & .images {
+    overflow: hidden;
+  }
+  & .card-body {
+    & .card-name-price {
+      display: flex;
+      justify-content: space-between;
+
+      & .card-title {
+        color: #6f42c1;
+      }
+      & p {
+        color: #008000;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.products-heading {
+  font-size: 45px;
+  font-weight: 600;
+  color: #6f42c1;
+}
+
+/*state*/
+
+/*****navbar Section *****/
+.navbar {
+  line-height: 1.5;
+  padding: 0.8px 20px;
+  background-color: var(--wheat) !important;
+  color: var(--aqua) !important;
+
+  & .navbar-brand {
+    font-size: 38px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--red);
+    font-style: italic;
+  }
+
+  & .navbar-nav {
+    & li {
+      padding-right: 10px;
+
+      & a,
+      .cart-text {
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--slate) !important;
+        text-transform: uppercase;
+        transition: color 0.3s linear;
+        -webkit-transition: color 0.3s linear;
+        -moz-transition: color 0.3s linear;
+        -ms-transition: color 0.3s linear;
+        -o-transition: color 0.3s linear;
+
+        &:hover {
+          color: var(--slatethin) !important;
+        }
+      }
+    }
+    & li:last-child {
+      padding-right: 0px;
+    }
+  }
+  & .dropdown-menu {
+    & .dropdown-item {
+      background-color: #fff !important;
+    }
+    & li {
+      background-color: #fff !important;
+
+      & a {
+        font-size: 16px !important;
+      }
+    }
+    & .nav-link {
+      margin-left: 8px;
+    }
+  }
+}
+
+/***** Endnavbar Section *****/
+
+/***** footer Section *****/
+.footer {
+  background-color: #212121;
+  padding: 50px 40px;
+
+  & .row {
+    & div {
+      text-align: left;
+      & h4 {
+        color: var(--wheat) !important;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      & ul {
+        list-style: none;
+        padding: 0;
+
+        & a,
+        p {
+          color: var(--white);
+          transition: color 0.3s linear;
+          -webkit-transition: color 0.3s linear;
+          -moz-transition: color 0.3s linear;
+          -ms-transition: color 0.3s linear;
+          -o-transition: color 0.3s linear;
+        }
+        & a:hover {
+          color: var(--pink);
+        }
+        & .icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  & .copy-rigth {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--wheat);
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+/***** End footer Section *****/
+
+/*****layoutmain Section *****/
+main {
+  min-height: 70vh;
+}
+/***** Endlayoutmain Section *****/
+
+/*****about Section *****/
+.about {
+  & .div-2 {
+    margin-top: 50px;
+
+    & h3 {
+      font-size: 50px;
+    }
+  }
+}
+/***** End about Section *****/
+
+/*****contact Section *****/
+.contact {
+  & .div-1 {
+    margin-left: 20px;
+  }
+
+  & .div-2 {
+    margin-top: 30px;
+    margin-left: 20px;
+
+    & h1 {
+      font-size: 50px;
+      text-align: center;
+      background-color: black;
+      color: #fff;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+
+    & p {
+      margin: 2px 0px;
+      font-size: 22px;
+    }
+  }
+}
+/***** End contact Section *****/
+
+/*****privacy Section *****/
+.privacy {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+
+  & h1 {
+    font-size: 60px;
+  }
+  & h2 {
+    font-size: 80px;
+    margin: 20px 0px 40px 0px;
+  }
+  & a {
+    text-decoration: none;
+    color: black !important;
+    border: 2px solid black;
+    padding: 15px 4px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    &:hover {
+      background-color: black;
+      color: #fff !important;
+    }
+  }
+}
+/***** End privacy Section *****/
+
+.toast {
+  font-size: 5rem !important;
+  color: red;
+}
+
+/***** End form Section *****/
+
+.category-links ul {
+  list-style: none;
+
+  & .d {
+    display: flex;
+
+    & a {
+      background-color: blue;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 0.3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/***** cart-order Section *****/
+
+/***** End cart-order Section *****/

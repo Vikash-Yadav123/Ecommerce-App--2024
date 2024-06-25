@@ -1,0 +1,58 @@
+.product-details {
+  background-color: #ffffff;
+
+  & .product-details-info {
+    & h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #6f42c1;
+    }
+    & .rating {
+      margin-bottom: 20px;
+      & .gold {
+        color: #ffd700;
+      }
+      & span {
+        font-size: 18px;
+      }
+    }
+    & div {
+      margin-bottom: 5px;
+
+      & h5 {
+        font-size: 22px;
+        color: #282c3f;
+        font-weight: 600;
+        margin: 0;
+      }
+      & p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #616472;
+        margin: 0;
+      }
+    }
+  }
+}
+
+/*related products*/
+.related-products {
+  & .related-products-info {
+    width: 1000px;
+    margin: 10px auto;
+    & .card-body {
+      & .card-name-price {
+        display: flex;
+        justify-content: space-between;
+
+        & .card-title {
+          color: #6f42c1;
+        }
+        & p {
+          color: #008000;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

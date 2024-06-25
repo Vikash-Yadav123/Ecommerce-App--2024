@@ -1,0 +1,39 @@
+.cart-page {
+  background-color: #ffffff;
+  padding-left: 2px;
+  overflow: hidden;
+  width: 100%;
+
+  & table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+    & td {
+      font-weight: 600;
+      color: #282c3f;
+      padding: 10px;
+      text-align: center;
+
+      & img {
+        display: block;
+        margin: auto;
+      }
+    }
+    & .cross {
+      color: #ec185d;
+    }
+    & .decreasebtn,
+    .increasebtn,
+    .cross {
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    & tr {
+      padding: 5px;
+    }
+  }
+  & .all-clear {
+    text-align: right;
+  }
+}

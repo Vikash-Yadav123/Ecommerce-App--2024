@@ -1,0 +1,26 @@
+.home-page {
+  background-color: #ffffff;
+
+  & h3 {
+    color: #212529;
+    margin-bottom: 10px;
+  }
+
+  & h5 {
+    color: #393e46;
+  }
+
+  & .row {
+    & div {
+      & .custom-font-size {
+        font-size: 20px !important;
+      }
+    }
+
+    & .load {
+      font-size: 30px;
+      color: #008000;
+      cursor: pointer;
+    }
+  }
+}
